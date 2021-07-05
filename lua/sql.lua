@@ -22,6 +22,8 @@ function sql:__wrap_stmts(fn)
   return
 end
 
+sql.version = "0.1"
+
 --- Internal function for creating new connection.
 ---@todo: decide whether using os.time and epoch time would be better.
 -- sets {created, conn, closed}
